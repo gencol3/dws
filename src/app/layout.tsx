@@ -8,11 +8,7 @@ const truculenta = Truculenta({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   icons: {
-    icon: {
-      url: "/logo.png",
-      type: "image/png",
-      sizes: "32x32",
-    }
+    icon: "/logo.ico",
   },
   title: "Digital Wonders Solutions",
   description: "We Build Websites, Hybrid Apps, and PWAs for Your Business!",
