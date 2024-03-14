@@ -51,7 +51,7 @@ const ContactForm = () => {
                         className="border-2 border-black text-black rounded p-2 w-full"
                     />
                     <label htmlFor="Referrer" className="text-white">Referrer:</label>
-                    <small>Put "No One" if you don't have one</small>
+                    <small>Put &quot;No One&quot; if you don&apos;t have one</small>
                     <input
                         type="text"
                         id="Referrer"

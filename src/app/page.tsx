@@ -51,7 +51,7 @@ export default function Home() {
       <div className="w-full bg-gray-100 flex flex-col justify-center items-center p-8 gap-8">
         <h2 className="md:text-5xl text-3xl font-bold text-blue-500">What We can Offer You</h2>
         <div className="flex md:flex-row flex-col justify-center gap-10">
-          <p className="md:text-2xl text-xl text-center text-gray-500 md:w-1/3 w-full justify-top">Our websites, apps, and progressive web apps are built by professional designers and developers. We pay close attention to your business's needs and present you with the best solutions.</p>
+          <p className="md:text-2xl text-xl text-center text-gray-500 md:w-1/3 w-full justify-top">Our websites, apps, and progressive web apps are built by professional designers and developers. We pay close attention to your business&apos;s needs and present you with the best solutions.</p>
           <ul className="gap-4 mt-4 list-disc justify-center gap-2 flex flex-col">
             <li className="md:text-2xl text-xl text-blue-500">Websites</li>
             <li className="md:text-2xl text-xl text-blue-500">Apps</li>
