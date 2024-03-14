@@ -38,7 +38,7 @@ const ContactForm = () => {
     return (
         <div className="flex flex-row gap-2 justify-center items-center w-full mb-4 mt-4 p-4 justify-content">
             <div className="flex flex-col gap-2 justify-center items-center w-full mb-4 mt-4 md:p-4 justify-content">
-                <form onSubmit={handleSubmit} className="flex flex-col gap-2 justify-center items-center w-full mb-4 mt-4 md:p-4 justify-content">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-2 justify-center items-center w-full mb-4 mt-4 md:p-4 justify-content" data-netlify="true">
                     <label htmlFor="Name" className="text-white">Name:</label>
                     <input
                         type="text"
