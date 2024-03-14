@@ -36,7 +36,7 @@ export default function Home() {
         <div className="md:w-1/2 w-full h-screen flex flex-col md:justify-top md:p-8 p-4">
           <h1 className="md:text-7xl text-5xl font-bold">{texts[textIndex]}</h1>
           <p className="md:text-2xl text-xl">Join the Digital World.</p>
-          <Link href="/Contact" className="bg-red-500 text-white text-center p-3 rounded-full mt-4 md:w-1/3 w-1/2 md:text-5xl text-3xl font-bold drop-shadow-2xl">Choose Us</Link>
+          <Link href="/Contact" className="bg-red-500 text-white text-center p-3 rounded-full mt-4 md:w-1/3 w-1/2 md:text-5xl sm:text-3xl sm:w-1/2 text-3xl font-bold drop-shadow-2xl">Choose Us</Link>
         </div>
         <div className="w-full h-screen hidden md:flex md:w-1/2 flex justify-top items-center flex flex-col">
           <Image
