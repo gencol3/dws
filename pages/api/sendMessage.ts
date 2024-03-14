@@ -22,7 +22,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     // if resend is not sending the email, throw error
-    if (!resend.emails.send) {
+    if (!resend) {
       console.error('Error sending message');
       return res.status(500).json({ message: 'Internal Server Error' });
     }
