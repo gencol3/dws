@@ -21,6 +21,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       html: `<p>This is an Email to DWS from Contact Form. the name of the person is: ${formData.name}, the referrer is ${formData.referrer}, and the email is ${formData.email}. The message is: (${formData.message})</p>`
     });
 
+    // if resend is not sending the email, throw error
+    if (!resend.emails.send) {
+      console.error('Error sending message');
+      return res.status(500).json({ message: 'Internal Server Error' });
+    }
+
     console.log('Message sent successfully');
 
     return res.status(200).json({ success: true });
