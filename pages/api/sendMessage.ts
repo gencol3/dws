@@ -13,9 +13,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     console.log('Received form data:', formData);
 
-    resend.emails.send({
+    await resend.emails.send({
       from: 'dws@resend.dev',
-      to: ['delivered@resend.dev'],
+      to: 'digitalwonderssolutions@gmail.com',
       subject: 'New Contact Form Message',
       html: `<p>This is an Email to DWS from Contact Form. the name of the person is: ${formData.name}, the referrer is ${formData.referrer}, and the email is ${formData.email}. The message is: (${formData.message})</p>`
     });
