@@ -51,7 +51,7 @@ export default function Earn() {
       {/* Designers and Developers */}
       <div className="w-full bg-gray-400 flex md:flex-row flex-col justify-center items-center p-8 gap-8">
         <div className="md:w-1/2 flex flex-col justify-center items-center p-8 gap-8">
-            <h2 className="md:text-4xl text-3xl font-bold text-blue-200">Join the Team of Designers</h2>
+            <h2 className="md:text-4xl text-3xl font-bold text-blue-200">Join the Team of Remote Designers</h2>
             <p className="md:text-2xl text-black text-xl">Work With us to Create Beautiful Designs.</p>
             <ul className="text-black text-xl list-disc">
                 <li>We hire designers with all levels of experience.</li>
@@ -63,7 +63,7 @@ export default function Earn() {
             <p className="text-black">Contact us at : <Link href="mailto: digitalwonderssolutions@gmail.com">digitalwonderssolutions@gmail.com</Link> to apply. Open to anyone 18+</p>
         </div>
         <div className="md:w-1/2 flex flex-col justify-center items-center p-8 gap-8">
-            <h2 className="md:text-4xl text-3xl font-bold text-blue-200">Join the Team of Developers</h2>
+            <h2 className="md:text-4xl text-3xl font-bold text-blue-200">Join the Team of Remote Developers</h2>
             <p className="md:text-2xl text-black text-xl">Work With us to Build Beautiful Applications.</p>
             <ul className="text-black text-xl list-disc">
                 <li>We hire designers with all levels of experience.</li>
