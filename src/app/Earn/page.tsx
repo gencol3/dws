@@ -58,6 +58,7 @@ export default function Earn() {
                 <li>Our designers work from home.</li>
                 <li>A spot on the team is open to anyone with at least three years of experience.</li>
             </ul>
+            <p className="md:text-2xl text-black text-xl">We choose your team and you choose your projects.</p>
             <p className="md:text-2xl text-black text-xl">Pay will vary from project to project.</p>
             <p className="md:text-2xl text-black text-xl">You will need a valid email, Cashapp or Paypal, resume, and phone number.</p>
             <p className="text-black">Contact us at : <Link href="mailto: digitalwonderssolutions@gmail.com">digitalwonderssolutions@gmail.com</Link> to apply. Open to anyone 18+</p>
