@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Truculenta } from "next/font/google";
+import Head from "next/head"; // Import Head component
 import "./globals.css";
 import { title } from "process";
 
@@ -42,7 +43,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head><script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('ywVkO4XBBBE8Z6Bj'); </script></Head>
+      <Head>
+        {/* Add the script here */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(ss,ex){
+                window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));};
+                (function(d,s){
+                  fs=d.getElementsByTagName(s)[0]; 
+                  function ce(src){ 
+                    var cs=d.createElement(s); 
+                    cs.src=src; 
+                    cs.async=1; 
+                    fs.parentNode.insertBefore(cs,fs); 
+                  }; 
+                  ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); 
+                })(document,'script'); 
+              })('ywVkO4XBBBE8Z6Bj');
+            `,
+          }}
+        />
+      </Head>
       <body className={truculenta.className}>{children}</body>
     </html>
   );
