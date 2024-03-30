@@ -31,7 +31,6 @@ export default function Earn() {
                 <li>Get 10% per progressive web app sale!</li>
                 <li>Get 10% per hybrid app sale!</li>
             </ul>
-            <p className="md:text-2xl text-black text-xl">Get Paid When The Job Is Completed.</p>
             <p className="md:text-2xl text-black text-xl">You will need a valid email, Cashapp, and phone number.</p>
             <p className="text-black">Contact us at : <Link href="mailto: digitalwonderssolutions@gmail.com">digitalwonderssolutions@gmail.com</Link> to apply. Open to anyone 18+</p>
         </div>
