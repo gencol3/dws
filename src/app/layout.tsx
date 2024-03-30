@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Truculenta } from "next/font/google";
-import Head from "next/head"; // Import Head component
+import Script from 'next/script'
 import "./globals.css";
 import { title } from "process";
 
@@ -44,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={truculenta.className}>{children}</body>
+      <Script src="script.js" />
     </html>
   );
 }
