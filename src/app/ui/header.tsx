@@ -10,7 +10,7 @@ export default function MainHeader() {
     };
 
     return (
-        <header className="font-inter sticky top-0 z-50 bg-gradient-to-b from-black to-transparent">
+        <header className="font-inter sticky top-0 z-50 bg-gradient-to-b from-custom-blue to-transparent">
             <style jsx>{`
                 .font-inter {
                     font-family: 'Inter', sans-serif;
@@ -63,29 +63,23 @@ export default function MainHeader() {
                         </svg>
                     </button>
                     {isDropdownOpen && (
-                        <div className="fixed top-0 left-0 w-full h-full bg-gray-800 z-10 flex justify-center items-center">
+                        <div className="fixed top-0 left-0 w-full h-full bg-gray-800 z-10 flex justify-center items-center"  onClick={toggleDropdown}>
                             <div className="w-2/3 p-2 rounded-md shadow-lg">
                                 <ul className="flex flex-col gap-4 text-center">
-                                    <button
-                                        className="text-center hover:text-gray-400 focus:outline-none"
-                                        onClick={toggleDropdown}
-                                    >
-                                        Close
-                                    </button>
                                     <li>
-                                        <Link href="/">Home</Link>
+                                        <Link href="/" className='p-2'>Home</Link>
                                     </li>
                                     <li>
-                                        <Link href="/Services">Our Services</Link>
+                                        <Link href="/Services" className='p-2'>Our Services</Link>
                                     </li>
                                     <li>
-                                        <Link href="/About">About Us</Link>
+                                        <Link href="/About" className='p-2'>About Us</Link>
                                     </li>
                                     <li>
-                                        <Link href="/Contact">Contact Us</Link>
+                                        <Link href="/Contact" className='p-2'>Contact Us</Link>
                                     </li>
                                     <li>
-                                        <Link href="/Earn">Earn Money</Link>
+                                        <Link href="/Earn" className='p-2'>Earn Money</Link>
                                     </li>
                                 </ul>
                             </div>
