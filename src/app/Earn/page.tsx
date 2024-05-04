@@ -27,11 +27,10 @@ export default function Earn() {
             <h2 className="md:text-4xl text-3xl font-bold text-blue-500">Become a Remote Telemarketer</h2>
             <p className="md:text-2xl text-black text-xl">Work on your own time from home and watch money pour in!</p>
             <ul className="text-black text-xl list-disc">
-                <li>Get $100 per website sale!</li>
-                <li>Get $150 per progressive web app sale!</li>
-                <li>Get $200 per hybrid app sale!</li>
+                <li>Get 10% of sale per website sale!</li>
+                <li>Get 10% per progressive web app sale!</li>
+                <li>Get 10% per hybrid app sale!</li>
             </ul>
-            <p className="md:text-2xl text-black text-xl">Get Paid When The Job Is Completed.</p>
             <p className="md:text-2xl text-black text-xl">You will need a valid email, Cashapp, and phone number.</p>
             <p className="text-black">Contact us at : <Link href="mailto: digitalwonderssolutions@gmail.com">digitalwonderssolutions@gmail.com</Link> to apply. Open to anyone 18+</p>
         </div>
@@ -41,7 +40,7 @@ export default function Earn() {
             <ul className="text-black text-xl list-disc">
                 <li>Get $25 per website referrel!</li>
                 <li>Get $50 per progressive web app referrel!</li>
-                <li>Get $100 per hybrid app referrel!</li>
+                <li>Get $75 per hybrid app referrel!</li>
             </ul>
             <p className="md:text-2xl text-black text-xl">Get Paid When The Job Is Completed.</p>
             <p className="md:text-2xl text-black text-xl">You will need a valid email, Cashapp, and phone number.</p>
@@ -55,10 +54,11 @@ export default function Earn() {
             <p className="md:text-2xl text-black text-xl">Work With us to Create Beautiful Designs.</p>
             <ul className="text-black text-xl list-disc">
                 <li>We hire designers with all levels of experience.</li>
-                <li>Our Designers work from home.</li>
-                <li>We have a freelance pay modal.</li>
+                <li>Our designers work from home.</li>
+                <li>A spot on the team is open to anyone with at least three years of experience.</li>
             </ul>
-            <p className="md:text-2xl text-black text-xl">Choose your pay and projects.</p>
+            <p className="md:text-2xl text-black text-xl">We choose your team and you choose your projects.</p>
+            <p className="md:text-2xl text-black text-xl">Pay will vary from project to project.</p>
             <p className="md:text-2xl text-black text-xl">You will need a valid email, Cashapp or Paypal, resume, and phone number.</p>
             <p className="text-black">Contact us at : <Link href="mailto: digitalwonderssolutions@gmail.com">digitalwonderssolutions@gmail.com</Link> to apply. Open to anyone 18+</p>
         </div>
@@ -67,8 +67,8 @@ export default function Earn() {
             <p className="md:text-2xl text-black text-xl">Work With us to Build Beautiful Applications.</p>
             <ul className="text-black text-xl list-disc">
                 <li>We hire designers with all levels of experience.</li>
-                <li>Our Develoeprs work from home.</li>
-                <li>We have a freelance pay modal.</li>
+                <li>Our developers work from home.</li>
+                <li>A spot on the team is open to anyone with at least three years of experience.</li>
             </ul>
             <p className="md:text-2xl text-black text-xl">We choose your team and you choose your projects.</p>
             <p className="md:text-2xl text-black text-xl">Pay will vary from project to project.</p>
