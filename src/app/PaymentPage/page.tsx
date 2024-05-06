@@ -29,7 +29,7 @@ const PaymentPage: React.FC = () => {
   }, []);
 
   if (!paypalClientId) {
-    return <div>Loading...</div>;
+    return <Suspense fallback={<div>Loading...</div>}><div>Loading...</div></Suspense>;
   }
 
   const handleSuccess = () => {
