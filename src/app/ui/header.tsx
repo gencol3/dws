@@ -37,6 +37,9 @@ export default function MainHeader() {
                         <li>
                             <Link href="/Earn">Earn Money</Link>
                         </li>
+                        <li>
+                            <Link href="/Payment-Portal">Payment Portal</Link>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -80,6 +83,9 @@ export default function MainHeader() {
                                     </li>
                                     <li>
                                         <Link href="/Earn" className='p-2'>Earn Money</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/Payment-Portal" className='p-2'>Payment Portal</Link>
                                     </li>
                                 </ul>
                             </div>

@@ -1,6 +1,6 @@
 // PaymentPage.tsx
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import PayPalPaymentButtons from '../ui/PayPalButtons';
 import ContactForm from '../ui/contact-form';
@@ -43,6 +43,7 @@ const PaymentPage: React.FC = () => {
   };
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <div>
       <div className="w-full bg-blue-900 flex flex-col justify-center items-center">
       <h1 className="md:text-5xl text-3xl font-bold text-blue-500">Payment Page</h1>
@@ -55,6 +56,7 @@ const PaymentPage: React.FC = () => {
         <ContactForm />
       </div>
     </div>
+    </Suspense>
   );
 };
 
