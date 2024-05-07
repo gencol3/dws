@@ -4,6 +4,7 @@ import React, { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import PayPalPaymentButtons from '../ui/PayPalButtons';
 import ContactForm from '../ui/contact-form';
+import MainHeader from '../ui/header';
 
 const PaymentPage: React.FC = () => {
   const router = useRouter();
@@ -29,7 +30,7 @@ const PaymentPage: React.FC = () => {
   }, []);
 
   if (!paypalClientId) {
-    return <Suspense fallback={<div>Loading...</div>}><div>Loading...</div></Suspense>;
+    return <div>Loading...</div>;
   }
 
   const handleSuccess = () => {
@@ -43,8 +44,8 @@ const PaymentPage: React.FC = () => {
   };
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-    <div>
+    <div className='bg-blue-900'>
+      <MainHeader />
       <div className="w-full bg-blue-900 flex flex-col justify-center items-center">
       <h1 className="md:text-5xl text-3xl font-bold text-blue-500">Payment Page</h1>
       <p>Total Amount: ${amount}</p>
@@ -56,8 +57,11 @@ const PaymentPage: React.FC = () => {
         <ContactForm />
       </div>
     </div>
-    </Suspense>
   );
 };
 
-export default PaymentPage;
+const actualPage: React.FC = () => {
+  return <Suspense fallback={<div>Loading...</div>}><PaymentPage /></Suspense>;
+}
+
+export default actualPage;
