@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 const ContactForm = () => {
     const [name, setName] = useState("");
     const [referrer, setReferrer] = useState("");
+    const [ReferrerPhone, setReferrerPhone] = useState("");
     const [message, setMessage] = useState("");
     const [email, setEmail] = useState("");
     const router = useRouter();
@@ -17,6 +18,7 @@ const ContactForm = () => {
             const requestData = {
                 name: name,
                 referrer: referrer,
+                referrerPhone: ReferrerPhone,
                 email: email,
                 message: message
             };
@@ -59,6 +61,17 @@ const ContactForm = () => {
                         placeholder="Who Reffered You?"
                         value={referrer}
                         onChange={(e) => setReferrer(e.target.value)}
+                        className="border-2 border-black text-black rounded p-2 w-full"
+                    />
+                    <label htmlFor="Referrer" className="text-white">Referrer Phone Number:</label>
+                    <small>Put &quot;No One&quot; if you don&apos;t have one</small>
+                    <input
+                        type="number"
+                        id="ReferrerPhone"
+                        name="ReferrerPhone"
+                        placeholder="Put Their Phonenumber..."
+                        value={referrer}
+                        onChange={(e) => setReferrerPhone(e.target.value)}
                         className="border-2 border-black text-black rounded p-2 w-full"
                     />
                    <label htmlFor="Email" className="text-white">Email:</label>
