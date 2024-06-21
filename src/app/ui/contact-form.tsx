@@ -64,7 +64,7 @@ const ContactForm = () => {
                         className="border-2 border-black text-black rounded p-2 w-full"
                     />
                     <label htmlFor="Referrer" className="text-white">Referrer Phone Number:</label>
-                    <small>Put &quot;No One&quot; if you don&apos;t have one</small>
+                    <small>Skip if you don&apos;t have one</small>
                     <input
                         type="number"
                         id="ReferrerPhone"
